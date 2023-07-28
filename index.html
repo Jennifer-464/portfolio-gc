@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -17,9 +17,15 @@
         <nav>
             <img id="logo" src="./img/logo/transp-blue.png" alt="Logo for Jennifer Lopez">
             <ul>
-                <li> About Me </li>
-                <li> Projects </li>
-                <li> Contact Me </li>
+                <a href="#about">
+                    <li> About Me </li>
+                </a>
+                <a href="#projects">
+                    <li> Projects </li>
+                </a>
+                <a href="#contact">
+                    <li> Contact Me </li>
+                </a>
             </ul>
         </nav>
         <div class="hero">
@@ -42,15 +48,52 @@
         </div>
     </header>
 
-    <section>
-        <!-- section about me: title, p, img -->
+    <section class="about-me" id="about">
+        <div class="about-information">
+            <h2> About Me </h2>
+            <p> Hey there! My name is Jennifer Lopez & I am a Software Engineer grad with
+                a strong fascination for Front End Development :)
+                <br>
+                <br>
+                At the moment, I am taking the lead in our
+                <a href="https://digitalnest.org/" target="_blank"> company's</a> Front End
+                Developing pathway by creating visually captivating Figma web designs &
+                interactive WordPress sites. With the help of 100+ designs that
+                <a href="https://www.frontendmentor.io/" target="_blank"> Frontend Mentor</a>
+                provides, I've created a few
+                <a href="https://www.frontendmentor.io/profile/Jennifer-464" target="_blank"> websites</a>
+                using HTML/CSS/JS.
+                <!-- Hey there! <br><br>
+                I am Jennifer Lopez a highly motivated Front End Developer actively seeking
+                for a full-time position. I am a Software Engineer Grad from the
+                <a href="https://computingtalentinitiative.org/csin3/" target="_blank"> CSin3 </a>
+                program, meaning I completed my degree in 3 years with the support of my peers.
+                <br>
+                Over the past year, I have developed a strong fascination for Front End Development
+                and have taken the lead in our
+                <a href="https://digitalnest.org/" traget="_blank"> company's</a> Front End Developing pathway.
+                My journey has been focused on creating visually captivating Figma web designs and
+                interactive WordPress sites. With the help of 100+ designs that
+                <a href="https://www.frontendmentor.io/" traget="_blank"> Frontend Mentor</a>
+                provide, I've created a few
+                <a href="https://www.frontendmentor.io/profile/Jennifer-464" traget="_blank"> websites</a>
+                using HTML/CSS/JS.
+                <br>
+                With a solid educational background and hands-on experience, I am well-equipped
+                to take on new challenges and contribute to the success of any Front End
+                development team. -->
+            </p>
+        </div>
+        <div class="about-headshot">
+            <img src="./img/me/me.jpg" alt="Jennifer's professional headshot">
+        </div>
     </section>
 
-    <section>
+    <section class="" id="projects">
         <!-- section project: cards, img, title, p, view project -->
     </section>
 
-    <footer>
+    <footer class="" id="contact">
         <!-- footer for contact me: just email -->
     </footer>
 </body>

@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -25,12 +24,18 @@ nav {
 ul {
     list-style-type: none;
     padding: 0;
-    font-size: 30px;
+    padding-top: 16px;
+    font-size: 24px;
     display: flex;
 }
 
 li {
     padding-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #f3f3f3;
 }
 
 .hero {
@@ -40,19 +45,24 @@ li {
     align-items: center;
 }
 
+.hero-text h1,
+.hero-text p {
+    padding-bottom: 10px;
+}
+
 .hero-text {
     padding-bottom: 200px;
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 80px;
     margin: 0;
 }
 
 p {
     margin: 0;
-    font-size: 30px;
-    font-weight: 100;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 button {
@@ -84,10 +94,36 @@ button:hover {
 
 section {
     height: 500px;
-    background-color: yellow;
-    border: 1px solid black;
 }
 
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: 80px 200px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.about-information p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.about-information a {
+    color: #219ebc;
+}
+
+.about-headshot img {
+    width: 300px;
+    border-radius: 150px;
+    border: 3px solid #219ebc;
+}
+
+.about-headshot {
+    margin-left: 100px;
+}
 
 footer {
     height: 500px;
