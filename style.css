@@ -1,0 +1,10 @@
+section {
+    height: 500px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+header {
+    height: 100vh;
+    background-color: #013047;
+}
