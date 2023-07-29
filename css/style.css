@@ -125,7 +125,65 @@ h2 {
     margin-left: 100px;
 }
 
-footer {
-    height: 500px;
-    background-color: black;
+.my-projects {
+    padding: 80px 200px;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 100px;
 }
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 28%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    height: 550px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+}
+
+.project-image {
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+#need-border {
+    border: 2px solid rgb(229, 239, 245);
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.subtext {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #219ebc;
+    font-weight: bold;
+}
+
+footer {
+    height: 400px;
+    background-color: #3f3f3f;
+    color: #f3f3f3;
+    text-align: center;
+    font-size: 40px;
+    padding: 80px;
+}
+
+/* Will update with responsive design */
