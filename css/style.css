@@ -215,7 +215,8 @@ footer {
 
     li,
     p,
-    .about-information p,
+    .about-information #about-p1,
+    .about-information #about-p2,
     .subtext,
     button {
         font-size: 20px;
