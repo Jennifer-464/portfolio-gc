@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
@@ -241,23 +245,64 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* body {
-        background-color: orange;
-    } */
-
     header {
         padding: 0 40px;
     }
 
-    /* .hamburger {
+    .hamburger {
+        position: absolute;
+        right: 16px;
         display: block;
-        border: 0;
-        background-color: red;
-        color: white;
-        font-size: 30px;
-    } */
+        width: 40px;
+        height: 50px;
+        margin-top: 32px;
+        cursor: pointer;
+        z-index: 1;
+    }
 
-    nav {
+    .burger-line {
+        width: 40px;
+        height: 4px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        background-color: white;
+        transition: .3s;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .show {
+        display: block;
+        background-color: #3f3f3f;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        margin: 0;
+        padding: 80px 0;
+    }
+
+    .show li {
+        font-size: 20px;
+        line-height: 70px;
+    }
+
+    .active .burger-line:first-child {
+        transform: translateY(15px) rotate(45deg);
+    }
+
+    .active .burger-line:nth-child(2) {
+        width: 5px;
+        margin: 0 auto;
+        background-color: transparent;
+    }
+
+    .active .burger-line:last-child {
+        transform: translateY(-3px) rotate(-45deg);
+    }
+
+    .hide {
         display: none;
     }
 
@@ -286,10 +331,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-    /* body {
-        background-color: green;
-    } */
-
     h1 {
         font-size: 30px;
     }
@@ -313,6 +354,28 @@ footer {
 
     header {
         padding: 0 16px;
+    }
+
+    .hamburger {
+        margin-top: 24px;
+    }
+
+    .burger-line {
+        height: 3px;
+    }
+
+    .active .burger-line:first-child {
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    .active .burger-line:nth-child(2) {
+        width: 5px;
+        margin: 0 auto;
+        background-color: transparent;
+    }
+
+    .active .burger-line:last-child {
+        transform: translateY(-4px) rotate(-45deg);
     }
 
     .about-me {
